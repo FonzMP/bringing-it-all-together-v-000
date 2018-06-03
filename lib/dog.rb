@@ -79,6 +79,7 @@ class Dog
     SQL
 
     result = DB[:conn].execute(sql, name)[0]
+    id = result[0]
     binding.pry
   end
 
