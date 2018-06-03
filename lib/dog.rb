@@ -80,7 +80,7 @@ class Dog
 
     result = DB[:conn].execute(sql, name)[0]
     id = result[0]
-    binding.pry
+    self.find_by_id(id)
   end
 
   #
